@@ -1,11 +1,12 @@
-// console.log("JS Running");
+//getting our clock in a variable
+const clock = document.getElementById("clock");  
 
-const clock = document.getElementById("clock");  //getting our clock 
 var min = 0;
 var sec = 0;
 var milisec = 0;
 
-var stopClock = true; //initially clock is stoped hence it is true
+//initially clock is stoped hence it is true
+var stopClock = true; 
 
 // start button function
 function startButton(){
@@ -34,6 +35,7 @@ function resetButton(){
     milisec = 0;
 }
 
+// this is the main function which is used for working of our stopwatch
 function timer(){
     if(stopClock == false){
         sec = parseInt(sec);
